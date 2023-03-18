@@ -18,18 +18,18 @@ int main(void)
 	if ((f_d < m_d) && (m_d < l_d))
 {
 	putchar(f_d);
-																											   putchar(m_d);
-	   																										   putchar(l_d);
+	putchar(m_d);
+	putchar(l_d);
 			
-			   																								   if (c != 789)
-   																										   {
-																											   putchar(',');
-																											   putchar(' ');																										
-																										   }
+	if (c != 789)
+{
+	putchar(',');
+	putchar(' ');																										
+}
 	 	  
 }
-	c++;
+		c++;
 }
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
 }
