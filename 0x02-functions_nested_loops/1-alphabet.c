@@ -1,16 +1,24 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
- * print_alphabet - function to print abc
- *
+ * print_alphabet - Function
+ * Description: print alphabet from a - z
  * Return: 0
- */
+*/
+
 void print_alphabet(void)
 {
-	char c;
 
-	for (c = 'a'; c <= 'z'; c++)
+	/* 97 to 122 */
+
+	int count;
+
+	for (count = 97; count < 123; count++)
 	{
-		_putchar(c);
+		_putchar(count);
 	}
-_putchar('\n');
+
+	_putchar(10);
+
 }
+

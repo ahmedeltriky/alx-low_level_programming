@@ -1,19 +1,26 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * main - function to print
- *
+ * main - start the program
+ * Description: print _putchar
  * Return: 0
- */
+*/
+
 int main(void)
 {
-	char holberton[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
-	unsigned int c;
+	int length, i;
 
-	for (c = 0; c < sizeof(holberton); c++)
+	char chars[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+
+	length = sizeof(chars) / sizeof(char);
+
+	for (i = 0; i < length; i++)
 	{
-		_putchar(holberton[c]);
+		_putchar(chars[i] + 0);
 	}
-_putchar('\n');
-return (0);
+
+	_putchar(10);
+
+	return (0);
 }
+
