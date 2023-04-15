@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-    int i,j,k,l;
+    int i,j,k;
 
     for(i='0'; i<='9'; i++)
     {
@@ -13,21 +13,17 @@ int main(void)
         {
             for(k='0'; k<='9'; k++)
             {
-                for(l='0'; l<='9'; l++)
+                if(i<j && j<k)
                 {
-                    if(i<=k && l>j)
-                    {
-                        putchar(i);
-                        putchar(j);
-                        putchar(' ');
-                        putchar(k);
-                        putchar(l);
-                        putchar(',');
-                        putchar(' ');
-                    }
+                    putchar(i);
+                    putchar(j);
+                    putchar(k);
+                    putchar(',');
+                    putchar(' ');
                 }
             }
         }
     }
 	return (0);
 }
+	
