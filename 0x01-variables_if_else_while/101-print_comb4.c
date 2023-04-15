@@ -5,29 +5,29 @@
  */
 int main(void)
 {
-	int c = 0;
-	int f_d;
-	int m_d;
-	int l_d;
+    int i,j,k,l;
 
-	while (c <= 999)
-{
-	f_d = (c / 100 + '0');
-	m_d = (c / 10 % 10 + '0');
-	l_d = (c % 10 + '0');
-	if ((f_d < m_d) && (m_d < l_d))
-{
-	putchar(f_d);
-	putchar(m_d);
-	putchar(l_d);	
-	if (c != 789)
-{
-	putchar(',');
-	putchar(' ');																							
-}
-}
-	c++;
-}
-	putchar('\n');
+    for(i='0'; i<='9'; i++)
+    {
+        for(j='0'; j<='9'; j++)
+        {
+            for(k='0'; k<='9'; k++)
+            {
+                for(l='0'; l<='9'; l++)
+                {
+                    if(i<=k && l>j)
+                    {
+                        putchar(i);
+                        putchar(j);
+                        putchar(' ');
+                        putchar(k);
+                        putchar(l);
+                        putchar(',');
+                        putchar(' ');
+                    }
+                }
+            }
+        }
+    }
 	return (0);
 }
