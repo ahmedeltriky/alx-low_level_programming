@@ -1,24 +1,19 @@
-#include "main.h"
-
+#include <stdio.h>
+void print_alphabet(void);
 /**
- * print_alphabet - Function
- * Description: print alphabet from a - z
- * Return: 0
-*/
-
+ * main - entry
+ * return: 0
+ */
+int main(void)
+{
+    print_alphabet();
+    return 0;
+}
 void print_alphabet(void)
 {
-
-	/* 97 to 122 */
-
-	int count;
-
-	for (count = 97; count < 123; count++)
-	{
-		_putchar(count);
-	}
-
-	_putchar(10);
-
+    for(int i='a'; i<='z'; i++)
+    {
+        putchar(i);
+    }
+    putchar('\n');
 }
-
